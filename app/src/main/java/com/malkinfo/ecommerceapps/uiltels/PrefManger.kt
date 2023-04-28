@@ -3,13 +3,13 @@ package com.malkinfo.ecommerceapps.uiltels
 import android.content.Context
 import android.content.SharedPreferences
 
-class PrefManger(var context:Context)
+class PrefManger(private var context:Context)
 {
-    var pref :SharedPreferences
-    var editor :SharedPreferences.Editor
+    private var pref :SharedPreferences
+    private var editor :SharedPreferences.Editor
 
     // shared pref Mode
-    var PRIVATE_MODE = 0
+    private var PRIVATE_MODE = 0
     var isFirstTimeLaunch :Boolean
     get() = pref.getBoolean(IS_FIRST_TIME_LAUNCH, true)
     set(isFirstTime) {

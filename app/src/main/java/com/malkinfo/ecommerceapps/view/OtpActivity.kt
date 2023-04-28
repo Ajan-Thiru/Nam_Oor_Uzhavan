@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit
 class OtpActivity : AppCompatActivity() {
 
     var verificationId :String? = null
-    var auth : FirebaseAuth? = null
+    private var auth : FirebaseAuth? = null
     var dialog:ProgressDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

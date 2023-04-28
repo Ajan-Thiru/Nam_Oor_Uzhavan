@@ -1,14 +1,13 @@
 package com.malkinfo.ecommerceapps.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.appcompat.app.ActionBar
-import com.malkinfo.ecommerceapps.MainActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.malkinfo.ecommerceapps.R
 
 class WelcomeActivity : AppCompatActivity() {
@@ -23,7 +22,7 @@ class WelcomeActivity : AppCompatActivity() {
         val ani :Animation = AnimationUtils.loadAnimation(
             this@WelcomeActivity,R.anim.left_to_right
         )
-        imageView.setAnimation(ani)
+        imageView.animation = ani
         try {
             Handler().postDelayed(
                 {

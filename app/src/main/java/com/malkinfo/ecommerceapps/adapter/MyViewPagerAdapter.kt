@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.PagerAdapter
 
-class MyViewPagerAdapter(var c:Context,var layouts:IntArray):PagerAdapter()
+class MyViewPagerAdapter(private var c:Context, private var layouts:IntArray):PagerAdapter()
 {
     private  var layoutInflater :LayoutInflater? = null
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
